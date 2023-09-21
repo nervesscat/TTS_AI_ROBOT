@@ -1,3 +1,4 @@
+#ifndef VOICE_H
 #define VOICE_H
 
 #include <malloc.h>
@@ -20,3 +21,5 @@ public:
     VoiceClass();
     void speak(char* text);
 };
+
+#endif
