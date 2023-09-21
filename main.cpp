@@ -1,3 +1,4 @@
+#include <string>
 #include <string.h>
 #include <stdio.h>
 #include "voice.h"
@@ -10,7 +11,7 @@ char text[BUFSIZE];
 int main(int argc, char* argv[]) {
     VoiceClass voice;
     openai ai;
-    ai.print();
+    std::string response = ai.getCompletion("Hello, I'm Sarah");
     while (true) {
         printf("Enter msg: ");
         fgets(text, BUFSIZE, stdin);
